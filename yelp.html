@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description goes here">
+    <meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Yelp</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="yelp.css">
+		<script src="https://use.fontawesome.com/f5fb6e9872.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+  <body>
+	  <header>
+	    <nav>
+				<div class="hamburger">
+					<aside id="hamburger-bar"></aside>
+					<aside id="hamburger-bar"></aside>
+					<aside id="hamburger-bar"></aside>
+				</div>
+	      <ul>
+	        <li><a href="#">Write A Review</a></li>
+	        <li><a href="#">Events</a></li>
+	        <li><a href="#">Talk</a></li>
+	      </ul>
+	    </nav>
+	    <ul class="logIn">
+	      <li><a href="#">Log In</a></li>
+	    </ul>
+	    <div>
+	      <span>Sign Up</span>
+	    </div>
+	    <img class="yelpLogo" src="https://s3-media3.fl.yelpcdn.com/assets/srv0/styleguide/24e1fe240f00/assets/img/brand_guidelines/yelp_fullcolor_outline.png" alt="yelp logo">
+	    <form>
+	      <input class="searchBar" type="text" placeholder="Find Tacos, Cheap Dinner, Max's">
+	      <input class="searchBar2" type="text" placeholder="Near Boston,MA">
+	      <input class="spyButton"  type="button">
+	    </form>
+			<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+			<section>
+				<nav>
+			    <ul>
+			      <li><i class="fa fa-cutlery fa-2x" aria-hidden="true"></i><a href="#"> Restaurants</a></li>
+			      <li><i class="fa fa-glass fa-2x" aria-hidden="true"></i><a href="#"> Nightlife</a></li>
+			      <li><i class="fa fa-wrench fa-2x" aria-hidden="true"></i><a href="#"> Home services</a></li>
+			      <li><i class="fa fa-truck fa-2x" aria-hidden="true"></i><a href="#"> Delivery</a></li>
+			    </ul>
+				</nav>
+			</section>
+	    <span>Photo by Sharon H.</span>
+	  </header>
+	  <section id="centerContainer">
+	    <section class="topCenter">
+	      <h1 class="yelpBoston">Yelp Boston</h1>
+	      <nav>
+	        <ul>
+	          <li>san francisco</li>
+	          <li>new york</li>
+	          <li>san jose</li>
+	          <li>los angeles</li>
+	          <li>chicago</li>
+	          <li>palo alto</li>
+	          <li>more sites</li>
+	        </ul>
+	      </nav>
+	    </section>
+	    <section class="leftCenter">
+	      <img src="http://cdn1.bostonmagazine.com/wp-content/uploads/sites/2/2017/06/Cunard-Tavern-Cuban-spring-rolls.jpg" alt="food">
+	      <h2>Cunard Tavern</h2>
+	       <span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+					 <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>12 reviews</span>
+				 <ul>
+		       <li>$$ Gastropubs</li>
+		       <li>East Boston</li>
+		       <li class="makeOrange"><i class="fa fa-fire" aria-hidden="true"></i> Opened 2 Weeks Ago</li>
+				 </ul>
+	    </section>
+	    <section class="middleCenter">
+	      <img src="https://assets3.thrillist.com/v1/image/2673726/size/tl-stack_item_medium.jpg" alt="food">
+	      <h2>Rail Stop Restaurant & Bar</h2>
+				<span><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>8 reviews</span>
+	      <ul>
+	        <li>$$ Bars,Seafood,British</li>
+	        <li>Boston,MA</li>
+	        <li class="makeOrange"><i class="fa fa-fire" aria-hidden="true"></i> Opened 4 Weeks Ago</li>
+	      </ul>
+	    </section>
+	    <section class="rightCenter">
+	      <img src="http://cdn1.bostonmagazine.com/wp-content/uploads/sites/2/2017/05/Puro-Ceviche-Bar.jpg" alt="food">
+	      <h2>Puro Ceviche Bar</h2>
+				<span class="reviewIcon"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i>
+					21 reviews</span>
+	      <ul id="listPuro">
+	        <li>$$ Wine Bars,Cocktail Bars,Seafood</li>
+	        <li>Backbay</li>
+	        <li class="makeOrange"><i class="fa fa-fire" aria-hidden="true"></i> Opened 7 Weeks Ago</li>
+	      </ul>
+	    </section>
+	  </section>
+	  <div id="bottomContainer">
+	    <!--<h1>browse businesses by category</h1>-->
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media1.fl.yelpcdn.com/assets/srv0/homepage/885251a16f2a/assets/img/categories/72x72_restaurants.png" alt="Restaurants"></a>
+	      <span>Restaurants</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/6823e40b57ed/assets/img/categories/72x72_shopping.png" alt="category"></a>
+	      <span>Shopping</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/766057013d0b/assets/img/categories/72x72_nightlife.png" alt="category"></a>
+	      <span>Night Life</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/fe34a0bb9f65/assets/img/categories/72x72_active_life.png" alt="category"></a>
+	      <span>Active Life</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media4.fl.yelpcdn.com/assets/srv0/homepage/7b942aff3f02/assets/img/categories/72x72_beauty.png" alt="category"></a>
+	      <span>Beauty & Spas</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media1.fl.yelpcdn.com/assets/srv0/homepage/038fc7f981bc/assets/img/categories/72x72_automotive.png" alt="category"></a>
+	      <span>Automotive</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/homepage/17ea2d2443e9/assets/img/categories/72x72_home_services.png" alt="category"></a>
+	      <span>Home Services</span>
+	    </section>
+	    <section>
+	      <a href="#"><img class="bottomImgs" src="https://s3-media3.fl.yelpcdn.com/assets/srv0/homepage/f36a7f7d42f8/assets/img/categories/72x72_more_categories.png" alt="category"></a>
+	      <span>More Categories</span>
+	    </section>
+	  </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="yelp.js"></script>
+  </body>
+  </html>

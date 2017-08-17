@@ -1,0 +1,612 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 0px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 10px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header {
+  background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(http://mariasitaliankitchen.com/wp-content/uploads/2015/03/15_Home_Slider_Food_Lasagna_.jpg);
+  background-size: cover;
+  z-index: -3;
+  margin-top: -10px;
+  margin-right: -8px;
+  margin-left: -10px;
+  height: 600px;
+  padding-left: 60px;
+  font-weight: 400;
+}
+
+header > nav li{
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+header > nav li a{
+  text-decoration: none;
+  color: #FAF0E6;
+  display: block;
+  margin: 30px 0px 20px 30px;
+}
+
+a:hover{
+  color: white;
+}
+
+nav + ul a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #FAF0E6;
+}
+
+header div{
+  float: right;
+  border: 3px solid white;
+  border-radius: 2px;
+  font-size: 1.5em;
+  padding: 5px 25px;
+  color: white;
+  margin-right: 147px;
+  margin-top: -60px;
+  -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+div:hover{
+  background-color: white;
+  color: black;
+  opacity: ;
+}
+
+section > nav ul{
+  margin-left: 20%;
+}
+
+ section > nav ul li{
+  display: inline-block;
+  margin: 0px 20px 30px 20px;
+}
+
+section > nav ul li a{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #FAF0E6;
+}
+
+section + span{
+  display: block;
+  font-size: 1.5em;
+  margin: 120px 60px 0px 550px;
+  color: #FAF0E6;
+}
+
+.logIn{
+  font-size: -0.5em;
+  float:right;
+  list-style: none;
+  color: #FAF0E6;
+  margin-right: 288px;
+  margin-top: -53px;
+}
+
+.yelpLogo{
+  margin: 4% 10% 0% 38%;
+  width: 18%
+}
+
+.searchBar{
+  width: 31%;
+  height: 40px;
+  border: none;
+  margin: 20px -40px 0px 208px;
+  border-radius: 3px;
+}
+
+.searchBar2{
+  width: 31%;
+  height: 40px;
+  border: none;
+  margin: 20px 0px -0px 0px;
+  border-radius: 3px
+}
+
+.spyButton{
+  width: 4%;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #FF3232;
+  border: none;
+  margin-left: -3px;
+  padding: 16px;
+}
+
+.fa-search{
+  color: white;
+  display: block;
+  position: relative;
+  left: 76.5%;
+  bottom: 30px;
+}
+
+.fa-cutlery{
+  color: white;
+}
+
+.fa-glass{
+  color: white;
+}
+
+.fa-wrench{
+  color: white;
+}
+
+.fa-truck{
+  color: white;
+}
+
+
+/**********************
+center of the page
+**********************/
+#centerContainer{
+  margin-right: -8px;
+  margin-left: -10px;
+  height: 600px;
+}
+
+section > h1 + nav  ul{
+  margin-left: 230px;
+  border-bottom: thin solid lightgrey;
+  margin-right: 270px;
+
+}
+
+section > h1 + nav  ul  li{
+  font-size: 1.5em;
+  color: grey;
+  margin-bottom: -10px;
+}
+
+section > img{
+  height: 60%;
+  width: 100%;
+}
+
+img + h2{
+  color: #0073bb;
+  margin-bottom: 0px;
+}
+
+h2 + span{
+  font-size: 1.3em;
+  margin-left: -173px;
+}
+
+span + ul{
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-left: -31px;
+  margin-top: 18px;
+}
+
+span + ul li{
+  font-size: 1.3em;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.yelpBoston{
+  font-size: 1.9em;
+  color: red;
+  text-align: center;
+}
+
+.reviewIcon{
+  margin-left: 25px;
+}
+
+#listPuro{
+  margin-top: 0px;
+}
+
+.makeOrange{
+  color:orange;
+}
+
+.topCenter{
+  height: 70px;
+}
+
+.leftCenter{
+  float: left;
+  height: 300px;
+  margin-right: 35px;
+  margin-left: 190px;
+  margin-top: 80px;
+  width: 22%;
+  border: 1px solid lightgrey;
+}
+
+.middleCenter{
+  float: left;
+  height: 300px;
+  margin-top: 80px;
+  width: 22%;
+  margin-right: 35px;
+  border: 1px solid lightgrey;
+}
+
+.rightCenter{
+  float: left;
+  height: 300px;
+  margin-top: 80px;
+  width: 22%;
+  border: 1px solid lightgrey;
+}
+
+/********************
+bottom of the page
+*********************/
+#bottomContainer{
+  margin-right: -8px;
+  margin-left: -10px;
+  padding-left: 50px;
+  padding-top: 60px;
+  height: 550px;
+  background-color: #f2f2f2;
+}
+
+div section{
+  float: left;
+  width: 19%;
+  margin: 100px 5px -56px 50px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+section > a + span{
+  font-size: 1.5em;
+  margin-left: -15px;
+}
+
+.bottomImgs{
+  width: 42%;
+  margin: 13px -77px 19px 69px;
+}
+
+/**********************
+media queries
+***********************/
+
+@media (min-width : 320px) and (max-width : 768px){
+  header{
+    background: none;
+    background-color: grey;
+    margin-left: -108px;
+    height: 770px;
+  }
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  height: 42px;
+  width: 50px;
+  background: white;
+  margin-top: 1%;
+  position: absolute;
+  left: 340px;
+}
+
+#hamburger-bar{
+  height: 6px;
+  width: 35px;
+  background: black;
+  position: relative;
+  right: 17px;
+  bottom: 5px;
+  margin-top: 4px;
+}
+
+.hamburger:hover{
+  opacity: .6;
+}
+
+
+  header > nav li{
+    display: none;
+    border: 1px solid black;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #f2f2f2;
+  }
+
+  .menuItems{
+    display: block;
+    border: 1px solid black;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #f2f2f2;
+  }
+
+  header > nav li a{
+    text-decoration: block;
+    color: black;
+    display: block;
+    margin: 30px 0px 20px 30px;
+  }
+
+  a:hover{
+    color: red;
+  }
+
+  nav + ul a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FAF0E6;
+  }
+
+  .logIn{
+    float: none;
+    list-style: none;
+    text-align: center;
+    margin-right: 120px;
+    margin-top: -1px;
+    position: relative;
+    top: 15px;
+  }
+
+
+  header div {
+    display: block;
+    position: relative;
+    left: 7%;
+    margin-top: -5%
+
+  }
+
+
+
+  div:hover{
+    background-color: white;
+    color: black;
+}
+
+  .yelpLogo{
+    margin: 2% 10% 0% 35%;
+    width: 40%
+  }
+
+.searchBar{
+  width: 90%;
+  height: 40px;
+  border-bottom: 1px solid grey;
+  margin: 20px 0px 0px 43px;
+  border-radius: 3px;
+}
+
+.searchBar2{
+  width: 90%;
+  height: 40px;
+  border: none;
+  margin: 0px 2px -12px 43px;
+  border-radius: 3px
+}
+
+.spyButton{
+  display: none;
+}
+
+.fa-search:before {
+   content: "\f002";
+   display: none;
+}
+
+section + span{
+  display: none;
+}
+
+section > nav ul{
+  margin-top: 10%;
+  margin-left: 0px;
+  text-align: center;
+}
+
+section > nav ul li{
+ display: block;
+ margin: 0px 20px 30px 20px;
+}
+}
+
+/*******************
+center of the page
+*****************/
+@media (min-width : 320px) and (max-width : 768px){
+
+  #centerContainer{
+    margin-right: -8px;
+    margin-left: -10px;
+    height: 1400px;
+  }
+
+  section > h1 + nav  ul{
+    margin-left: -36px;
+    margin-top: 101px;
+    width: 107%;
+
+  }
+
+  section > h1 + nav  ul  li{
+    font-size: 1.5em;
+    color: grey;
+    margin-top: 0px;
+    margin-bottom: -4px;
+  }
+
+
+
+  img + h2{
+    color: #0073bb;
+    margin-bottom: 20px;
+  }
+
+  h2 + span{
+    display: none;
+    font-size: 1.3em;
+    margin-left: -173px;
+  }
+
+  span + ul{
+    display: block;
+    float: none;
+    margin-right: 20px;
+    margin-left: -31px;
+    margin-top: 18px;
+  }
+
+  span + ul li{
+    font-size: 1.3em;
+    list-style-type: none;
+    margin-right: 25px;
+  }
+
+  .yelpBoston{
+    font-size: 1.9em;
+    color: red;
+    text-align: center;
+    margin-bottom: -100px;
+  }
+
+  .reviewIcon{
+    margin-left: 25px;
+  }
+
+  #listPuro{
+    margin-top: 0px;
+  }
+
+  .makeOrange{
+    color:orange;
+  }
+
+  .topCenter{
+    height: 70px;
+  }
+
+  .leftCenter{
+    float: none;
+    height: 400px;
+    margin-right: -58px;
+    margin-left: 75px;
+    margin-top: 85px;
+    width: 64%
+  }
+
+  .middleCenter{
+    float: none;
+    height: 400px;
+    margin-top: 10px;
+    width: 64%;
+    margin-left: 75px;
+    border: 1px solid lightgrey;
+  }
+
+  .rightCenter{
+    float: none;
+    height: 400px;
+    margin-top: 10px;
+    width: 64%;
+    margin-left: 75px;
+    border: 1px solid lightgrey;
+  }
+}
+/***********************
+bottom
+************************/
+@media (min-width : 320px) and (max-width : 768px){
+  #bottomContainer{
+    margin-right: -9px;
+    margin-left: -23px;
+    padding-left: 0px;
+    padding-top: 10px;
+    height: 1948px;
+    background-color: #f2f2f2;
+
+  }
+
+  div section{
+    float: none;
+    width: 42%;
+    margin: 78px 12px -46px 126px;
+    height: 190px;
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+
+  section > a + span{
+    font-size: 1.5em;
+    margin-left: 24px;
+  }
+
+  .bottomImgs{
+    width: 53%;
+    margin: 12px -113px 27px 42px
+  }
+
+
+}
